@@ -3,8 +3,9 @@ using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 using Puzzles.Core;
+using Puzzles.Core.Helpers;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.

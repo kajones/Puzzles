@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using Puzzles.Core.Models;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// A Pythagorean triplet is a set of three natural numbers, a less than b less than c for which

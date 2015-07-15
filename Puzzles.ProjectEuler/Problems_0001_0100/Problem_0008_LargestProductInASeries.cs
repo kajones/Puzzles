@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     [TestFixture]
     public class Problem_0008_LargestProductInASeries

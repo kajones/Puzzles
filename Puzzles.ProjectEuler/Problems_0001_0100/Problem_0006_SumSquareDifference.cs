@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// The sum of the squares of the first ten natural numbers is,

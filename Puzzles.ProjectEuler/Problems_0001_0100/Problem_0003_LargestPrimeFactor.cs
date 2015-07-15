@@ -3,8 +3,9 @@ using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
 using Puzzles.Core;
+using Puzzles.Core.Helpers;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// The prime factors of 13195 are 5, 7, 13 and 29.

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puzzles.Core", "Puzzles.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puzzles.ProjectEuler", "Puzzles.ProjectEuler\Puzzles.ProjectEuler.csproj", "{9701B093-DE7A-43CB-AFF6-16045581558C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puzzles.LeetCode", "Puzzles.LeetCode\Puzzles.LeetCode.csproj", "{CF270D04-133B-41AB-874F-DE54AD4AB83E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{9701B093-DE7A-43CB-AFF6-16045581558C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9701B093-DE7A-43CB-AFF6-16045581558C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9701B093-DE7A-43CB-AFF6-16045581558C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF270D04-133B-41AB-874F-DE54AD4AB83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF270D04-133B-41AB-874F-DE54AD4AB83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF270D04-133B-41AB-874F-DE54AD4AB83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF270D04-133B-41AB-874F-DE54AD4AB83E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

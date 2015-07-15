@@ -40,9 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\DigitHelper.cs" />
+    <Compile Include="Helpers\FactorHelper.cs" />
+    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\PathHelper.cs" />
     <Compile Include="Models\Triple.cs" />
-    <Compile Include="PalindromeHelper.cs" />
-    <Compile Include="PrimeHelper.cs" />
+    <Compile Include="Helpers\NumberAsWordsHelper.cs" />
+    <Compile Include="Helpers\PalindromeHelper.cs" />
+    <Compile Include="Helpers\PrimeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

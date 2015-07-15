@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9701B093-DE7A-43CB-AFF6-16045581558C}</ProjectGuid>
+    <ProjectGuid>{CF270D04-133B-41AB-874F-DE54AD4AB83E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Puzzles.ProjectEuler</RootNamespace>
-    <AssemblyName>Puzzles.ProjectEuler</AssemblyName>
+    <RootNamespace>Puzzles.LeetCode</RootNamespace>
+    <AssemblyName>Puzzles.LeetCode</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,7 +42,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,38 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problems_0001_0100\Problem_0001_MultiplesOfThreeAndFive.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0002_EvenFibonacciNumbers.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0003_LargestPrimeFactor.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0004_LargestPalindromeProduct.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0005_SmallestMultiple.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0006_SumSquareDifference.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0007_Prime10001.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0008_LargestProductInASeries.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0009_SpecialPythagoreanTriplet.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0010_SummationOfPrimes.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0011_LargestProductInAGrid.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0012_HighlyDivisibleTriangularNumber.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0013_LargeSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0014_LongestCollatzSequence.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0015_LatticePaths.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0016_PowerDigitSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0017_NumberLetterCounts.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0018_MaximumPathSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0019_CountingSundays.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0020_FactorialDigitSum.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0001_TwoSum.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0002_AddTwoNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Puzzles.Core\Puzzles.Core.csproj">
-      <Project>{71a2ec8c-7ce7-4054-97d3-fe893c16cc02}</Project>
-      <Name>Puzzles.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

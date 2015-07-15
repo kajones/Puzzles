@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0011_0020
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// In the 20×20 grid below, four numbers along a diagonal line have been marked in red.

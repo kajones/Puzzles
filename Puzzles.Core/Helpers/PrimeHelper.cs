@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Puzzles.Core
+namespace Puzzles.Core.Helpers
 {
     public static class PrimeHelper
     {

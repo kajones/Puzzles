@@ -2,8 +2,9 @@
 using System.Globalization;
 using NUnit.Framework;
 using Puzzles.Core;
+using Puzzles.Core.Helpers;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// A palindromic number reads the same both ways. 

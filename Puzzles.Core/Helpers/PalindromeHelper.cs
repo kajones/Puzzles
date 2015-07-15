@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Numerics;
 
-namespace Puzzles.Core
+namespace Puzzles.Core.Helpers
 {
     public static class PalindromeHelper
     {

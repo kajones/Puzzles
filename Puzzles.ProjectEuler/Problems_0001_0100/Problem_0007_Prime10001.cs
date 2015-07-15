@@ -2,8 +2,9 @@
 using FluentAssertions;
 using NUnit.Framework;
 using Puzzles.Core;
+using Puzzles.Core.Helpers;
 
-namespace Puzzles.ProjectEuler.Problems_0001_0100.Problems_0001_0010
+namespace Puzzles.ProjectEuler.Problems_0001_0100
 {
     /// <summary>
     /// By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
