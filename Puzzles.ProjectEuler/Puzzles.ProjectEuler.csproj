@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -152,10 +153,14 @@
     <Compile Include="Problems_0001_0100\Problem_0100_ArrangedProbability.cs" />
     <Compile Include="Problems_0101_0200\Problem_0101_OptimumPolynomial.cs" />
     <Compile Include="Problems_0101_0200\Problem_0102_TriangleContainment.cs" />
+    <Compile Include="Problems_0101_0200\Problem_0112_BouncyNumbers.cs" />
+    <Compile Include="Problems_0101_0200\Problem_0113_NonBouncyNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Puzzles.Core\Puzzles.Core.csproj">
@@ -232,6 +237,9 @@
     <EmbeddedResource Include="DataFiles\Problem_0102_triangles.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

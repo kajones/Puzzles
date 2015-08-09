@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Helpers\AStarPathHelper.cs" />
     <Compile Include="Helpers\BinaryHelper.cs" />
+    <Compile Include="Helpers\BouncyNumberChecker.cs" />
     <Compile Include="Helpers\CombinationGenerator.cs" />
     <Compile Include="Helpers\CombinationHelper.cs" />
     <Compile Include="Helpers\CubeHelper.cs" />
