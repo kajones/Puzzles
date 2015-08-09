@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Problems_0001_0100\Problem_0001_TwoSum.cs" />
     <Compile Include="Problems_0001_0100\Problem_0002_AddTwoNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

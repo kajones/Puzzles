@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Numerics;
 
@@ -25,6 +26,11 @@ namespace Puzzles.Core.Helpers
         public static IEnumerable<int> GetDigits(BigInteger number)
         {
             return GetDigits(number.ToString());
+        }
+
+        public static IEnumerable<int> GetDigits(decimal number)
+        {
+            return GetDigits(number.ToString(CultureInfo.InvariantCulture));
         }
 
         public static IEnumerable<int> GetDigits(long number)
