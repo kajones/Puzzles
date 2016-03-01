@@ -11,7 +11,9 @@ namespace Puzzles.LeetCode.Problems_0001_0100
     /// You may assume that each input would have exactly one solution.
     ///
     /// Input: numbers={2, 7, 11, 15}, target=9
-    /// Output: index1=1, index2=2
+    /// Output: index1=0, index2=1
+    /// 
+    /// Zero-based
     [TestFixture]
     public class Problem_0001_TwoSum
     {
@@ -19,6 +21,15 @@ namespace Puzzles.LeetCode.Problems_0001_0100
         public void RunTest()
         {
             var result = TwoSum(new[] {2, 7, 11, 15}, 9);
+
+            result[0].Should().Be(0);
+            result[1].Should().Be(1);
+        }
+
+        [Test]
+        public void RunAlternateTest()
+        {
+            var result = TwoSum(new[] { 3, 2, 4 }, 6);
 
             result[0].Should().Be(1);
             result[1].Should().Be(2);
@@ -35,8 +46,8 @@ namespace Puzzles.LeetCode.Problems_0001_0100
                     var sum = nums[i] + nums[j];
                     if (sum != target) continue;
 
-                    result[0] = i + 1;
-                    result[1] = j + 1;
+                    result[0] = i;
+                    result[1] = j;
                     return result;
                 }
             }
