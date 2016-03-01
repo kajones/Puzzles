@@ -59,6 +59,7 @@
     <Compile Include="DieHelperTests.cs" />
     <Compile Include="EulerTotientTests.cs" />
     <Compile Include="Extensions\GridConfimDigitsExtensions.cs" />
+    <Compile Include="ExtractMedianFromArray.cs" />
     <Compile Include="FibonacciGeneration.cs" />
     <Compile Include="GenerateCombinations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Shapes\OctagonGeneration.cs" />
     <Compile Include="Shapes\PentagonGeneration.cs" />
     <Compile Include="Shapes\TriangleGeneration.cs" />
+    <Compile Include="SplitArray.cs" />
     <Compile Include="SquareGeneration.cs" />
     <Compile Include="SuDoku\BuildGrid.cs" />
     <Compile Include="SuDoku\FindBoxLimits.cs" />

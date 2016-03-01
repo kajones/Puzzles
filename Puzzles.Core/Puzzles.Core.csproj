@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ArrayMedianHelper.cs" />
+    <Compile Include="Helpers\ArraySplitter.cs" />
     <Compile Include="Helpers\AStarPathHelper.cs" />
     <Compile Include="Helpers\BinaryHelper.cs" />
     <Compile Include="Helpers\BouncyNumberChecker.cs" />
@@ -96,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BigONotation.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

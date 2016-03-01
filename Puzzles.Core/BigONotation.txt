@@ -1,0 +1,23 @@
+﻿Big O Notation is a way of representing the *maximum* expected duration for an algorithm
+
+O(1) means the algorithm will take the same duration regardless of the size of the data
+     e.g. checking on the first element in an array
+
+O(n) means that the algorithm will take a time proportional to the size of the data 
+     (i.e. the duration will grow linearly in relation to the size of the data)
+	 e.g. checking for the existence of a particular element in an array
+
+O(n^2) means that the algorithm will take a time proportional to the square of the size of the data
+     - this is often the case where you will have a nested loop going through all the elements of the array
+	   because for each item in n you do n operations
+	 - also naive bubble sort
+
+O(n^x) means that the algorithm will take a time proportional to the xth power of the size of the data
+        e.g. x nested loops
+
+O(2^n) is where the duration will grow exponentially based on the size of the data
+       e.g. calculating the Fibonacci series
+
+O(log n) e.g. finding an item in a sorted array using binary search
+
+See http://bigocheatsheet.com/ for a useful table comparing algorithm performance

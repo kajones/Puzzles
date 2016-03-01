@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Problems_0001_0100\Problem_0001_TwoSum.cs" />
     <Compile Include="Problems_0001_0100\Problem_0002_AddTwoNumbers.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0003_LongestStringWithoutRepeatingCharacters.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0004_MedianOfTwoSortedArrays.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Puzzles.Core\Puzzles.Core.csproj">
+      <Project>{71a2ec8c-7ce7-4054-97d3-fe893c16cc02}</Project>
+      <Name>Puzzles.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
