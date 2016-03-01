@@ -35,6 +35,42 @@ namespace Puzzles.LeetCode.Problems_0001_0100
         }
 
         [Test]
+        public void ConfirmGetValueOfZeroList()
+        {
+            var list = new ListNode(0);
+
+            var value = GetValueOfList(list);
+            value.Should().Be(0);
+        }
+
+        [Test]
+        public void ConfirmGetValueOfLargeNumber()
+        {
+            var list2_1 = new ListNode(1);
+            var list2_2 = new ListNode(9);
+            var list2_3 = new ListNode(9);
+            var list2_4 = new ListNode(9);
+            var list2_5 = new ListNode(9);
+            var list2_6 = new ListNode(9);
+            var list2_7 = new ListNode(9);
+            var list2_8 = new ListNode(9);
+            var list2_9 = new ListNode(9);
+            var list2_10 = new ListNode(9);
+            list2_1.next = list2_2;
+            list2_2.next = list2_3;
+            list2_3.next = list2_4;
+            list2_4.next = list2_5;
+            list2_5.next = list2_6;
+            list2_6.next = list2_7;
+            list2_7.next = list2_8;
+            list2_8.next = list2_9;
+            list2_9.next = list2_10;
+
+            var value = GetValueOfList(list2_1);
+            Assert.That(value, Is.EqualTo(9999999991));
+        }
+
+        [Test]
         [TestCase(1, new[] { 1})]
         [TestCase(0, new[] { 0 })]
         [TestCase(9, new[] { 9 })]
@@ -74,6 +110,61 @@ namespace Puzzles.LeetCode.Problems_0001_0100
             result.next.next.val.Should().Be(8);
         }
 
+        [Test]
+        public void RunZeroValueTest()
+        {
+            var list1_1 = new ListNode(0);
+
+            var list2_1 = new ListNode(0);
+
+            var result = AddTwoNumbers(list1_1, list2_1);
+
+            result.val.Should().Be(0);
+        }
+
+        [Test]
+        public void RunTenBillionTest()
+        {
+            var list1_1 = new ListNode(9);
+
+            var list2_1 = new ListNode(1);
+            var list2_2 = new ListNode(9);
+            var list2_3 = new ListNode(9);
+            var list2_4 = new ListNode(9);
+            var list2_5 = new ListNode(9);
+            var list2_6 = new ListNode(9);
+            var list2_7 = new ListNode(9);
+            var list2_8 = new ListNode(9);
+            var list2_9 = new ListNode(9);
+            var list2_10 = new ListNode(9);
+            list2_1.next = list2_2;
+            list2_2.next = list2_3;
+            list2_3.next = list2_4;
+            list2_4.next = list2_5;
+            list2_5.next = list2_6;
+            list2_6.next = list2_7;
+            list2_7.next = list2_8;
+            list2_8.next = list2_9;
+            list2_9.next = list2_10;
+
+            var result = AddTwoNumbers(list1_1, list2_1);
+
+            var value = GetValueOfList(result);
+
+            Assert.That(value, Is.EqualTo(10000000000));
+            result.val.Should().Be(0);
+            result.next.val.Should().Be(0);
+            result.next.next.val.Should().Be(0);
+            result.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.next.next.next.next.val.Should().Be(0);
+            result.next.next.next.next.next.next.next.next.next.next.val.Should().Be(1);
+        }
+
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
             var firstValue = GetValueOfList(l1);
@@ -84,32 +175,33 @@ namespace Puzzles.LeetCode.Problems_0001_0100
             return TurnValueIntoList(sum);         
         }
 
-        public int GetValueOfList(ListNode listNode)
+        public long GetValueOfList(ListNode listNode)
         {
-            var value = 0;
-            var multiplier = 1;
+            long value = 0;
+            long multiplier = 1;
             do
             {
                 value += (listNode.val*multiplier);
                 listNode = listNode.next;
                 multiplier *= 10;
-            } while (listNode.next != null);
+            } while (listNode != null && listNode.next != null);
 
-            value += (listNode.val*multiplier);
+            if (listNode != null)
+                value += (listNode.val*multiplier);
 
             return value;
         }
 
-        public ListNode TurnValueIntoList(int value)
+        public ListNode TurnValueIntoList(long value)
         {
-            var lastDigit = value % 10;
+            int lastDigit = GetLastDigit(value);
             var listNode = new ListNode(lastDigit);
             var currentNode = listNode;
 
             while (value >= 0)
             {
                 value /= 10;
-                lastDigit = value % 10;
+                lastDigit = GetLastDigit(value);
 
                 if (value == 0) break;
 
@@ -119,6 +211,12 @@ namespace Puzzles.LeetCode.Problems_0001_0100
             }
 
             return listNode;
+        }
+
+        private static int GetLastDigit(long value)
+        {
+            var textValue = value.ToString();
+            return System.Convert.ToInt32(textValue.Substring(textValue.Length - 1));
         }
     }
 
