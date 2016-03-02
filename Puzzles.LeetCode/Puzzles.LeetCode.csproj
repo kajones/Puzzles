@@ -55,6 +55,7 @@
     <Compile Include="Problems_0001_0100\Problem_0004_MedianOfTwoSortedArrays.cs" />
     <Compile Include="Problems_0001_0100\Problem_0005_LongestPalindromicSubstring.cs" />
     <Compile Include="Problems_0001_0100\Problem_0006_ZigZagConversion.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0007_ReverseInteger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
