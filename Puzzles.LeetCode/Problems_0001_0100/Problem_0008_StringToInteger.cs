@@ -96,37 +96,5 @@ namespace Puzzles.LeetCode.Problems_0001_0100
 
             return Convert.ToInt32(result);
         }
-
-        public int MyAtoiUsingCharacters(string str)
-        {
-            var isNegative = str.Contains("-");
-
-            // Ensure only one sign present
-            var afterSignRemoval = str.Replace("-", "").Replace("+", "");
-            if (afterSignRemoval.Length < (str.Length - 1)) return 0;
-
-            // Remove formatting characters
-            var noSymbolsText = afterSignRemoval.Replace(",", "");
-            noSymbolsText = noSymbolsText.Trim();
-
-            int result = 0;
-            int multiplier = Convert.ToInt32(Math.Pow(10, noSymbolsText.Length-1));
-            for (var idx = 0; idx < noSymbolsText.Length; ++idx)
-            {
-                var currChar = noSymbolsText[idx];
-                var currInt = currChar - 48;
-                if (currInt < 0 || currInt > 9) break;
-
-                result += (currInt * multiplier);
-                multiplier /= 10;
-            }
-
-            if (isNegative)
-            {
-                result *= -1;
-            }
-
-            return result;
-        }
     }
 }
