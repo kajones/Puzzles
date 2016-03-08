@@ -60,6 +60,8 @@
     <Compile Include="Problems_0001_0100\Problem_0009_PalindromeNumber.cs" />
     <Compile Include="Problems_0001_0100\Problem_0010_RegularExpressionMatching.cs" />
     <Compile Include="Problems_0001_0100\Problem_0011_ContainerWithMostWater.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0012_IntegerToRoman.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0013_RomanToInteger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -71,32 +71,6 @@ namespace Puzzles.Core.Helpers
                 }
             }
 
-            //while (digitalRemainder >= 1000)
-            //{
-            //    roman += "M";
-            //    digitalRemainder -= 1000;
-            //}
-            //if (digitalRemainder >= 900)
-            //{
-            //    roman += "CM";
-            //    digitalRemainder -= 900;
-            //}
-            //if (digitalRemainder >= 500)
-            //{
-            //    roman += "D";
-            //    digitalRemainder -= 500;
-            //}
-            //while (digitalRemainder >= 100)
-            //{
-            //    roman += "C";
-            //    digitalRemainder -= 100;
-            //}
-            //if (digitalRemainder >= 90)
-            //{
-            //    roman += "XC";
-            //    digitalRemainder -= 90;
-            //}
-
             return roman;
         }
 
