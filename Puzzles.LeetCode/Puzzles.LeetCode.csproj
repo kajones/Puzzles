@@ -63,6 +63,7 @@
     <Compile Include="Problems_0001_0100\Problem_0012_IntegerToRoman.cs" />
     <Compile Include="Problems_0001_0100\Problem_0013_RomanToInteger.cs" />
     <Compile Include="Problems_0001_0100\Problem_0014_LongestCommonPrefix.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0015_ThreeSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
