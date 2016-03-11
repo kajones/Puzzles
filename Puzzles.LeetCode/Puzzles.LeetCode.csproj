@@ -67,6 +67,7 @@
     <Compile Include="Problems_0001_0100\Problem_0016_ThreeSumClosest.cs" />
     <Compile Include="Problems_0001_0100\Problem_0017_LetterCombinationsOfAPhoneNumber.cs" />
     <Compile Include="Problems_0001_0100\Problem_0018_FourSum.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0019_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
