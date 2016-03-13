@@ -70,6 +70,7 @@
     <Compile Include="Problems_0001_0100\Problem_0019_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems_0001_0100\Problem_0020_ValidParentheses.cs" />
     <Compile Include="Problems_0001_0100\Problem_0021_MergeTwoSortedLists.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0022_GenerateParentheses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
