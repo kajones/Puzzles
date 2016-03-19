@@ -76,6 +76,7 @@
     <Compile Include="Problems_0001_0100\Problem_0025_ReverseNodesInKGroup.cs" />
     <Compile Include="Problems_0001_0100\Problem_0026_RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="Problems_0001_0100\Problem_0027_RemoveElement.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0028_ImplementStrStr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
