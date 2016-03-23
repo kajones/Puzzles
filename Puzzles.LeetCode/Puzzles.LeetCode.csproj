@@ -78,6 +78,7 @@
     <Compile Include="Problems_0001_0100\Problem_0027_RemoveElement.cs" />
     <Compile Include="Problems_0001_0100\Problem_0028_ImplementStrStr.cs" />
     <Compile Include="Problems_0001_0100\Problem_0029_DivideTwoIntegers.cs" />
+    <Compile Include="Problems_0001_0100\Problem_0030_SubstringWithConcatenationOfAllWords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
