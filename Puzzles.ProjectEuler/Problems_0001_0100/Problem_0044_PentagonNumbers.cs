@@ -18,7 +18,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private List<int> pentagonalNumbers;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             pentagonalNumbers = new List<int>();

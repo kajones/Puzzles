@@ -27,7 +27,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private List<long> abundantNumbers;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
             abundantNumbers = new List<long>();

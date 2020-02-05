@@ -94,7 +94,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
 
         private readonly List<bool> doubles = new List<bool> { false, false, false };
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             SetUpSquares();

@@ -26,7 +26,7 @@ namespace Puzzles.Core.Tests.SuDoku
 
         private readonly ISolver solver = new NakedPairSolver();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             var grid = GetGridAfterSomeSolving();

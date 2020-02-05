@@ -21,7 +21,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private readonly List<int> numbers = new List<int>();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             for (var n = 1; n < 1000; ++n)

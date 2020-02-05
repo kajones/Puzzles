@@ -24,7 +24,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private static readonly Dictionary<int, int> squares = new Dictionary<int, int>();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             squares.Add(0, 0);

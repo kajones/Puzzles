@@ -31,7 +31,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private List<int> primes;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void TestFixtureSetUp()
         {
             primes = PrimeHelper.GetPrimesUpTo(87400);

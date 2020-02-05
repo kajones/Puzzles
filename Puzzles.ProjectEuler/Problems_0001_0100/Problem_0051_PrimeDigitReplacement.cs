@@ -23,7 +23,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
  
         private Dictionary<int, List<List<int>>> combinations;
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             // Don't bother swapping the last digit - it wouldn't produce enough primes

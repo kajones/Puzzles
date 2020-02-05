@@ -23,7 +23,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
         private readonly List<long> pentagons = new List<long>();
         private readonly List<long> hexagons = new List<long>();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             for (var n = 1; n < 100000; ++n)

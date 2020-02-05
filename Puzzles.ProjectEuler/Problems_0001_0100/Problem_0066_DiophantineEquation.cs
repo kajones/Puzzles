@@ -32,7 +32,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private readonly List<long> squares = new List<long>();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         //[TestFixtureSetUp, Ignore("Not required")]
         public void FixtureSetUp()
         {

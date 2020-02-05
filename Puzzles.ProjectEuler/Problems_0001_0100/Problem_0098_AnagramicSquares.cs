@@ -31,7 +31,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
             /// <summary>
         /// 14: ADMINISTRATION
         /// </summary>
-        [Test, Ignore]
+        [Test, Ignore("Ignore this")]
         public void FindLongestWord()
         {
             var fileContent = FileHelper.GetEmbeddedResourceContent(fileName);
@@ -47,7 +47,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
         /// What is the longest word that could be a square?
         /// CDEINORTU
         /// </summary>
-        [Test, Ignore]
+        [Test, Ignore("Ignore this")]
         public void FindLongestAnagramKey()
         {
             var fileContent = FileHelper.GetEmbeddedResourceContent(fileName);
@@ -65,7 +65,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
         /// <summary>
         /// Largest group: Key:OPST Anagrams:POST,SPOT,STOP
         /// </summary>
-        [Test, Ignore]
+        [Test, Ignore("Ignore this")]
         public void ConfirmIfAnyAnagramGroupHasMoreThanTwoEntries()
         {
             var fileContent = FileHelper.GetEmbeddedResourceContent(fileName);
@@ -81,7 +81,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
             Console.WriteLine("Largest group: Key:{0} Anagrams:{1}", largestGroup.Key, string.Join(",", largestGroup.Anagrams.Select(a => a.Word)));
         }
 
-        [Test, Ignore]
+        [Test, Ignore("Ignore this")]
         public void ConfirmSquareTextPopulation()
         {
             var squaresAsText = GetSquaresAsText();

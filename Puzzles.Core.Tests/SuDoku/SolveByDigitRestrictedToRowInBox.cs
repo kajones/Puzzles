@@ -25,7 +25,7 @@ namespace Puzzles.Core.Tests.SuDoku
 
         private readonly ISolver solver = new DigitRestrictedToRowInBoxSolver();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             var grid = GridBuilder.BuildFromDefinition(exampleGrid);

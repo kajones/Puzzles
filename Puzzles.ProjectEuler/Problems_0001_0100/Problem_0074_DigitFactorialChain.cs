@@ -34,7 +34,7 @@ namespace Puzzles.ProjectEuler.Problems_0001_0100
     {
         private readonly Dictionary<int, long> factorials = new Dictionary<int, long>();
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void FixtureSetUp()
         {
             for (var i = 0; i < 10; ++i)
