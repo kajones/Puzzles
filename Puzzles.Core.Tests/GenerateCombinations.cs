@@ -141,7 +141,7 @@ namespace Puzzles.Core.Tests
             Assert.AreEqual(expectedCombinationCount, (BigInteger)combinations.Count(), "Have sufficient combinations");
         }
 
-        [Test, Explicit("Very slow test")]
+        [Test, Explicit("Very slow test"), Ignore("Very slow test")]
         public void ConfirmNumberOfCombinationsGenerated()
         {
             const int limit = 20;

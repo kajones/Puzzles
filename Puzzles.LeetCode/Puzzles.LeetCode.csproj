@@ -1,105 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CF270D04-133B-41AB-874F-DE54AD4AB83E}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Puzzles.LeetCode</RootNamespace>
-    <AssemblyName>Puzzles.LeetCode</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="FluentAssertions">
-      <HintPath>..\packages\FluentAssertions.5.10.0\lib\net47\FluentAssertions.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Problems_0001_0100\Problem_0001_TwoSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0002_AddTwoNumbers.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0003_LongestStringWithoutRepeatingCharacters.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0004_MedianOfTwoSortedArrays.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0005_LongestPalindromicSubstring.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0006_ZigZagConversion.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0007_ReverseInteger.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0008_StringToInteger.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0009_PalindromeNumber.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0010_RegularExpressionMatching.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0011_ContainerWithMostWater.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0012_IntegerToRoman.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0013_RomanToInteger.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0014_LongestCommonPrefix.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0015_ThreeSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0016_ThreeSumClosest.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0017_LetterCombinationsOfAPhoneNumber.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0018_FourSum.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0019_RemoveNthNodeFromEndOfList.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0020_ValidParentheses.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0021_MergeTwoSortedLists.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0022_GenerateParentheses.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0023_MergeKSortedLists.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0024_SwapNodesInPairs.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0025_ReverseNodesInKGroup.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0026_RemoveDuplicatesFromSortedArray.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0027_RemoveElement.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0028_ImplementStrStr.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0029_DivideTwoIntegers.cs" />
-    <Compile Include="Problems_0001_0100\Problem_0030_SubstringWithConcatenationOfAllWords.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ProjectReference Include="..\Puzzles.Core\Puzzles.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Puzzles.Core\Puzzles.Core.csproj">
-      <Project>{71a2ec8c-7ce7-4054-97d3-fe893c16cc02}</Project>
-      <Name>Puzzles.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
