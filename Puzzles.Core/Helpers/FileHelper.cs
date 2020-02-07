@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using NUnit.Framework;
+using System.Linq;
 
 namespace Puzzles.Core.Helpers
 {
@@ -11,6 +11,15 @@ namespace Puzzles.Core.Helpers
         public static string GetFileContent(string filePath)
         {
             return File.ReadAllText(filePath);
+        }
+
+        public static List<string> GetFileLines(string[] pathElements)
+        {
+            var filePath = Path.Join(pathElements);
+
+            var fileContents = File.ReadAllLines(filePath);
+
+            return fileContents.ToList();
         }
 
         /// <summary>
